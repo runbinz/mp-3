@@ -4,9 +4,19 @@ import StyledMain from "../Tags/StyledMain.tsx";
 import StyledImg from "../Tags/StyledImg.tsx";
 import StyledP from "../Tags/StyledP.tsx";
 
+import { useEffect } from "react";
+
+function Title() {
+    useEffect(() => {
+        document.title = "Certifications | Resume";
+    }, []);
+    return <></>;
+}
+
 function Certs() {
     return (
         <>
+            <Title/>
             <Main>
                 <StyledMainTitle>Certifications</StyledMainTitle>
                 <StyledMain>

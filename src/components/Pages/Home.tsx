@@ -5,6 +5,15 @@ import StyledMainTitle from "../Tags/Title.tsx";
 import StyledP from "../Tags/StyledP.tsx";
 import StyledMain from "../Tags/StyledMain.tsx";
 
+import { useEffect } from "react";
+
+function Title() {
+    useEffect(() => {
+        document.title = "Home | Resume";
+    }, []);
+    return <></>;
+}
+
 const StyledImageDiv = styled.div`
     max-width: 100%;
     width: 40%;
@@ -44,6 +53,7 @@ const StyledImage = styled.img`
 function Home() {
     return (
         <>
+            <Title/>
             <Main>
                 <StyledMainTitle>Home</StyledMainTitle>
                 <StyledMain>

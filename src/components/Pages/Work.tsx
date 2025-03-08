@@ -4,9 +4,19 @@ import StyledMain from "../Tags/StyledMain.tsx";
 import StyledImg from "../Tags/StyledImg.tsx";
 import StyledP from "../Tags/StyledP.tsx";
 
+import { useEffect } from "react";
+
+function Title() {
+    useEffect(() => {
+        document.title = "Work | Resume";
+    }, []);
+    return <></>;
+}
+
 function Work() {
     return (
         <>
+            <Title/>
             <Main>
                 <StyledMainTitle>Work Experience</StyledMainTitle>
                 <StyledMain>
